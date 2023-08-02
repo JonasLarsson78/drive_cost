@@ -16,6 +16,11 @@ petrolPrice = petrolPrice.replace(',', '.')
 const price = diriveCost(Number(distance), Number(carConsumption), Number(petrolPrice))
 
 console.log()
+
+console.log('Distance: ' + distance + ' mil')
+console.log('Bilen drar: ' + carConsumption + ' liter/mil')
+console.log('Bensinpris: ' + petrolPrice + ' kr/liter')
+console.log()
 console.log(chalk.blueBright('Din körkostnad blir: ') + chalk.red.bold.underline((Math.round(price) + ' kr')))
 console.log()
 

@@ -1,3 +1,3 @@
-export const diriveCost = (distance = 0, carConsumption = 0, petrolPrice = 0) => {
+export const diriveCost = (distance = 10, carConsumption = 0.5, petrolPrice = 20) => {
   return carConsumption * distance * petrolPrice
 }
