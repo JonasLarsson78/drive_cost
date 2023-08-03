@@ -13,11 +13,12 @@ carConsumption = carConsumption.replace(',', '.')
 let petrolPrice = prompt(chalk.yellow('Vad kostar bensinen? (kr/liter) '))
 petrolPrice = petrolPrice.replace(',', '.')
 
+console.log()
+
 const price = diriveCost(Number(distance), Number(carConsumption), Number(petrolPrice))
 
 console.log()
-
-console.log('Distance: ' + distance + ' mil')
+console.log('Distans: ' + distance + ' mil')
 console.log('Bilen drar: ' + carConsumption + ' liter/mil')
 console.log('Bensinpris: ' + petrolPrice + ' kr/liter')
 console.log()
